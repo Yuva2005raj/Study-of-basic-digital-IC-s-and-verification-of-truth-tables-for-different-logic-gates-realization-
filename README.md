@@ -5,7 +5,7 @@ To study about the different digital IC’s and to verify the truth table in Qua
 Equipments Required:
 Hardware – PCs, Cyclone II , USB flasher
 Software – Quartus prime
-Theory
+Theory:
 Introduction
 Logic gates are the basic building blocks of any digital system. Logic gates are electronic circuits having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as
 
@@ -51,7 +51,7 @@ The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will gi
 
 Y= A⊕B
 
-Procedure
+Procedure:
 Connect the supply (+5V) to the circuit
 Switch ON the main switch
 Press the switches for inputs “A” and “B”. The switch is ON state when 1 is pressed. The switch is OFF state when 0 is pressed.
@@ -60,13 +60,30 @@ Check all the gates following the same procedure.
 Program:
 /*
 Program to verify the truth table in quartus for the basic logic gates using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: YUVARAJ B
+RegisterNumber: 212222230182
+
+module gates(a,b,yand,yor,ynot,yxor,ynand,ynor,yxnor);
+input a,b;
+output yand,yor,ynot,yxor,ynand,ynor,yxnor;
+and(yand,a,b);
+or(yor,a,b);
+not(ynot,a);
+xor(yxor,a,b);
+nand(ynand,a,b);
+nor(ynor,a,b);
+xnor(yxnor,a,b);
+endmodule
 */
 Logic symbol & Truthtable
-RTL realization
-Output:
-RTL
+RTL DIAGRAM:
+![261496762-51d20fa6-3ea2-4900-937c-836b74367f40](https://github.com/Yuva2005raj/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/118343998/7c4f8be2-35f2-423b-980a-83d633c071d2)
+
+TRUTH TABLE:
+![261495849-ac181506-1592-4ce6-a47f-df4fb6113622](https://github.com/Yuva2005raj/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/118343998/28dd6344-ebf2-4485-b4e1-946ebe37700e)
+
+Output Waform:
+![261497081-27714a70-6f12-4f58-8cff-736285df46bf](https://github.com/Yuva2005raj/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/118343998/0211f308-0099-4c96-b362-8af5c3873320)
 
 Result:
 Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
