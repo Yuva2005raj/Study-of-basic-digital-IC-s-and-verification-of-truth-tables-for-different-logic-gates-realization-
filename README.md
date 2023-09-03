@@ -6,6 +6,7 @@
 Equipments Required :
 
  1 Hardware – PCs, Cyclone II , USB flasher
+ 
  2 Software – Quartus prime
 
 THEORY :
